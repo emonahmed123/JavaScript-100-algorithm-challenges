@@ -32,17 +32,40 @@
 //leap when year is leapyear
 
 
-function Leapyear(year) {
+// function Leapyear(year) {
 
-    const Leap = year % 4
+//     const Leap = year % 4
 
-    if (Leap === 0) {
-        return console.log("this is  leap year")
-    }
+//     if (Leap === 0) {
+//         return console.log("this is  leap year")
+//     }
 
-    else {
-        return console.log("this is not  leap year")
-    }
+//     else {
+//         return console.log("this is not  leap year")
+//     }
 
-}
-Leapyear(2024)
+// }
+// Leapyear(2024)
+
+// find odd number
+// function findOddSum(paras) {
+//     let sum = 0
+//     paras.forEach((para, index) => {
+//         const element = para
+
+
+//         sum += element
+
+//         console.log(sum)
+//     });
+
+
+//     // for (para of paras) {
+//     //     console.log(para)
+
+//     // }
+// }
+
+
+
+findOddSum([5, 7, 8, 45, 30])
