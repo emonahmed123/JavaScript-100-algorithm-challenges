@@ -68,4 +68,30 @@
 
 
 
-findOddSum([5, 7, 8, 45, 30])
+// findOddSum([5, 7, 8, 45, 30])
+
+
+// findall add numeber
+
+
+// function getOddnuminArray(numbers) {
+//     const oddNumbara = []
+//     for (let i = 0; i < numbers.length; i++) {
+//         const index = i;
+
+//         const element = numbers[index];
+//         if (element % 2 !== 0) {
+//             console.log(element)
+
+//             oddNumbara.push(element)
+//         }
+
+
+//     }
+
+//     return oddNumbara
+
+// }
+
+
+// console.log(getOddnuminArray([5, 7, 8, 45, 30]))
