@@ -48,32 +48,23 @@
 // Leapyear(2024)
 
 // find odd number
+
+
+
+
+
 // function findOddSum(paras) {
 //     let sum = 0
 //     paras.forEach((para, index) => {
 //         const element = para
-
-
 //         sum += element
 
-//         console.log(sum)
+
 //     });
 
+//     return sum
 
-//     // for (para of paras) {
-//     //     console.log(para)
-
-//     // }
 // }
-
-
-
-// findOddSum([5, 7, 8, 45, 30])
-
-
-// findall add numeber
-
-
 // function getOddnuminArray(numbers) {
 //     const oddNumbara = []
 //     for (let i = 0; i < numbers.length; i++) {
@@ -81,7 +72,7 @@
 
 //         const element = numbers[index];
 //         if (element % 2 !== 0) {
-//             console.log(element)
+
 
 //             oddNumbara.push(element)
 //         }
@@ -94,4 +85,13 @@
 // }
 
 
-// console.log(getOddnuminArray([5, 7, 8, 45, 30]))
+// const oddNumbaras = (getOddnuminArray([5, 7, 8, 45, 30]))
+
+// console.log(findOddSum(oddNumbaras))
+
+
+
+
+const lastvalue = [1, 2, 3, 4, 5];
+
+console.log(lastvalue[1])
