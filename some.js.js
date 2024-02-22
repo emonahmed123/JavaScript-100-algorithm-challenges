@@ -92,6 +92,13 @@
 
 
 
-const lastvalue = [1, 2, 3, 4, 5];
+// const lastvalue = [1, 2, 3, 4, 5];
 
-console.log(lastvalue[1])
+// console.log(lastvalue[1])
+
+
+if (5 == '5') {
+    console.log('hello')
+} else (
+    console.log('fuck you')
+)
