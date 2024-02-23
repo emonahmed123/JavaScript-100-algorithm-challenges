@@ -97,8 +97,40 @@
 // console.log(lastvalue[1])
 
 
-if (5 == '5') {
-    console.log('hello')
-} else (
-    console.log('fuck you')
-)
+// if (5 == '5') {
+//     console.log('hello')
+// } else (
+//     console.log('fuck you')
+// )
+
+
+
+
+// let areaOfShapes = 'square'
+// let a = 5;
+// let b = 10;
+// let result
+// switch (areaOfShapes) {
+//     case "square":
+//         result = a * a
+//         console.log(result)
+//         break
+//     case "rectangle":
+//         result = a * b
+//         console.log(result)
+//         break
+
+
+//     default:
+// }
+let two = 5
+
+for (let i = 1; i <= 10; i++) {
+    let index = i
+
+    let numata = two * index
+
+    let num = two + 'x' + index + '=' + numata
+
+    console.log(num)
+}
