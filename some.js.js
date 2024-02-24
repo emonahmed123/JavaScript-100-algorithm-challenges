@@ -123,14 +123,82 @@
 
 //     default:
 // }
-let two = 5
+// let two = 5
 
-for (let i = 1; i <= 10; i++) {
-    let index = i
+// for (let i = 1; i <= 10; i++) {
+//     let index = i
 
-    let numata = two * index
+//     let numata = two * index
 
-    let num = two + 'x' + index + '=' + numata
+//     let num = two + 'x' + index + '=' + numata
 
-    console.log(num)
+//     console.log(num)
+// }
+
+
+// revers a sting whitout revers method
+
+
+// let sumon = 'emon'
+
+
+
+
+// function enaya(sum) {
+//     let values = ''
+//     console.log(typeof (values))
+//     for (let i = sum.length - 1; i >= 0; i--) {
+
+
+//         values = values + sum[i]
+//     }
+//     return values
+// }
+// console.log(enaya(sumon))
+
+
+// function faCtorial(num) {
+//     let sum = 1
+//     for (let i = 1; i <= num; i++) {
+//         let index = i;
+
+//         sum = sum * index
+//         console.log(i, sum)
+//     }
+
+
+// }
+// faCtorial(7)
+
+//   get  all odd number in array and get odd sum in arrry
+let oddArry = [1, 2, 3, 4, 5, 9, 6]
+
+function getOddnumber(arr) {
+    let Odd = []
+    for (let i = 0; i < arr.length; i++) {
+        let one = arr[i]
+        if (one % 2 !== 0) {
+            Odd.push(one)
+        }
+    }
+    return Odd
 }
+
+const plus = (getOddnumber(oddArry))
+
+
+function Oddsum(sum) {
+    let allSum = 0
+    for (let i = 0; i < sum.length; i++) {
+        let allvalue = sum[i];
+
+        if (allvalue % 2 !== 0) {
+            allSum = allSum + allvalue
+        }
+
+    }
+    console.log(allSum)
+    return allSum
+
+}
+Oddsum(plus)
