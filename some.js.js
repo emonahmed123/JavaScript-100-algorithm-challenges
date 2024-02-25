@@ -203,16 +203,35 @@
 // }
 // Oddsum(plus);
 
-const sonay = 'i love.you and fuck you'
+// const sonay = 'i love.you and fuck you'
 
-const emon = sonay.split('')
-console.log(emon);
+// const emon = sonay.split('')
+// console.log(emon);
 
-const doesExist = sonay.includes('and')
+// const doesExist = sonay.includes('and')
 
 
-if (doesExist === true) {
+// if (doesExist === true) {
 
-}
+// }
 
-console.log(doesExist)
+// console.log(doesExist)
+
+// const result = Math.pow(3, 3)
+
+// console.log(result);
+
+//Math operation
+//pow
+// abs
+// floor
+// ceil
+// Round
+// const num = 2.4
+// const fullNumber = Math.floor(Math.random() * 100)
+
+// console.log(fullNumber);
+
+// sawp
+
+
