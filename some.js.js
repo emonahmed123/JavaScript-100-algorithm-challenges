@@ -171,34 +171,48 @@
 // faCtorial(7)
 
 //   get  all odd number in array and get odd sum in arrry
-let oddArry = [1, 2, 3, 4, 5, 9, 6]
+// let oddArry = [1, 2, 3, 4, 5, 9, 6]
 
-function getOddnumber(arr) {
-    let Odd = []
-    for (let i = 0; i < arr.length; i++) {
-        let one = arr[i]
-        if (one % 2 !== 0) {
-            Odd.push(one)
-        }
-    }
-    return Odd
+// function getOddnumber(arr) {
+//     let Odd = []
+//     for (let i = 0; i < arr.length; i++) {
+//         let one = arr[i]
+//         if (one % 2 !== 0) {
+//             Odd.push(one)
+//         }
+//     }
+//     return Odd
+// }
+
+// const plus = (getOddnumber(oddArry))
+
+
+// function Oddsum(sum) {
+//     let allSum = 0
+//     for (let i = 0; i < sum.length; i++) {
+//         let allvalue = sum[i];
+
+//         if (allvalue % 2 !== 0) {
+//             allSum = allSum + allvalue
+//         }
+
+//     }
+//     console.log(allSum)
+//     return allSum
+
+// }
+// Oddsum(plus);
+
+const sonay = 'i love.you and fuck you'
+
+const emon = sonay.split('')
+console.log(emon);
+
+const doesExist = sonay.includes('and')
+
+
+if (doesExist === true) {
+
 }
 
-const plus = (getOddnumber(oddArry))
-
-
-function Oddsum(sum) {
-    let allSum = 0
-    for (let i = 0; i < sum.length; i++) {
-        let allvalue = sum[i];
-
-        if (allvalue % 2 !== 0) {
-            allSum = allSum + allvalue
-        }
-
-    }
-    console.log(allSum)
-    return allSum
-
-}
-Oddsum(plus)
+console.log(doesExist)
