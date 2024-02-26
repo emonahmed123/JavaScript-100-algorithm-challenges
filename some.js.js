@@ -234,4 +234,4 @@
 
 // sawp
 
-
+const badday = `aje codeing korbo na`
