@@ -292,18 +292,38 @@
 
 // big elemeint in the array
 
-function maxNumberInArry(numbers) {
-    let mat = 0
+// function maxNumberInArry(numbers) {
+//     let mat = 0
 
-    for (let i = 0; i < numbers.length; i++) {
+//     for (let i = 0; i < numbers.length; i++) {
 
-        const element = numbers[i]
-        if (element > mat) {
-            mat = element
-        }
+//         const element = numbers[i]
+//         if (element > mat) {
+//             mat = element
+//         }
 
-    }
-    return mat
-}
+//     }
+//     return mat
+// }
 
-console.log(maxNumberInArry([33, 2, 2, 45, 63, 34]))
+// console.log(maxNumberInArry([33, 2, 2, 45, 63, 34]))
+
+
+// function ReversWord(word) {
+//     let ans = []
+
+//     const Splet = word.split(' ')
+
+//     for (let i = Splet.length - 1; i >= 0; i--) {
+
+//         const element = Splet[i]
+//         console.log(element)
+//         ans.push(element)
+//     }
+
+//     console.log(ans)
+//     const revers = ans.join(' ')
+//     return revers
+// }
+
+// console.log(ReversWord('I love you'))
