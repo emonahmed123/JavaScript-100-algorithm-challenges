@@ -230,8 +230,62 @@
 // const num = 2.4
 // const fullNumber = Math.floor(Math.random() * 100)
 
+
 // console.log(fullNumber);
 
 // sawp
 
-const badday = `aje codeing korbo na`
+// substring
+//substr
+
+
+
+// const num = 2.1
+
+// const number = Math.ceil(num)
+// console.log(number)
+
+
+
+// write a function that will take 3 number will return the max number;
+
+
+
+// function maxNumber(num1, num2, num3) {
+//     let maxNnum = 0
+
+
+//     if (num1 < num2 && num1 < num3) {
+
+//         return maxNnum = num1
+
+//     }
+//     else if (num2 > num1 && num2 > num3) {
+//         return maxNnum = num2
+
+//     }
+//     else if (num3 > num1 && num3 > num2) {
+//         return maxNnum = num3
+
+//     }
+//     return maxNnum
+// }
+
+
+// console.log(maxNumber(4, 12, 7))
+
+
+// function minNumber(num1, num2, num3) {
+
+//     let first = num1
+//     let sec = num2
+//     let thrd = num1
+
+//     let minBtween = Math.min(first, sec, thrd)
+
+
+//     return minBtween
+
+// }
+
+// console.log(minNumber(10, 2, 3))
