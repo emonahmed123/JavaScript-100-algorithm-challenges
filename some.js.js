@@ -341,16 +341,62 @@
 
 
 
-function PaperRequirements(book1, book2, book3) {
+// function PaperRequirements(book1, book2, book3) {
 
-    let mott = 0
-    if (book3 && book2 && book3) {
-        let mot = (book1 * 100) + (book2 * 200) + (book3 * 300)
-        mott = mott + mot
+//     let mott = 0
+//     if (book3 && book2 && book3) {
+//         let mot = (book1 * 100) + (book2 * 200) + (book3 * 300)
+//         mott = mott + mot
 
+//     }
+//     return mott
+// }
+
+
+// console.log(PaperRequirements(1, 5, 5));
+
+// more big name
+
+
+// function BestFriend(name) {
+//     let big = name[0]
+
+
+//     for (let i = 0; i < name.length; i++) {
+
+
+//         if (name[i].length > big.length) {
+//             big = name[i]
+//         }
+//     }
+//     return big;
+// }
+
+
+// console.log(BestFriend(["emon", "sumonsss", "asraful"]))
+
+
+// ৫. এইটা একটু ট্রিকি হতে পারে। একটা Array এর মধ্যে অনেকগুলা সংখ্যা থাকবে। তোমার কাজ হচ্ছে সংখ্যা গুলা একটার পর একটা করে চেক করা। এবং সংখ্যা গুলা যদি পজিটিভ সংখ্যা হয়। অর্থাৎ শূন্য বা শূন্যের চাইতে বড় হয় তাহলে সেগুলাকে কোন একটা Array এর মধ্যে রাখবে। আর যদি নেগেটিভ সংখ্যা হয়। তাহলে লুপটা স্টপ করে দিবে। এবং লুপ বন্ধ করার আগ পর্যন্ত যতগুলা পজিটিভ সংখ্যা পাওয়া গেছে। সেগুলা রিটার্ন করে দিবে। 
+
+
+
+
+const deTicetodd = (arr) => {
+    let aRR = []
+
+    for (let i = 0; i <= arr.length; i++) {
+        let index = i;
+        let elemeint = arr[index]
+
+        if (elemeint >= 1) {
+            aRR.push(elemeint)
+
+        }
+        else {
+            break
+        }
     }
-    return mott
+    return aRR
 }
 
-
-console.log(PaperRequirements(1, 5, 5));
+console.log(deTicetodd([1, 2, 3, 4, -5, 54]))
