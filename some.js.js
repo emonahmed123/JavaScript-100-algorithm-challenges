@@ -338,3 +338,19 @@
 //     fibo[i] = fibo[i - 1] + fibo[i - 2]
 // }
 // console.log(fibo)
+
+
+
+function PaperRequirements(book1, book2, book3) {
+
+    let mott = 0
+    if (book3 && book2 && book3) {
+        let mot = (book1 * 100) + (book2 * 200) + (book3 * 300)
+        mott = mott + mot
+
+    }
+    return mott
+}
+
+
+console.log(PaperRequirements(1, 5, 5));
