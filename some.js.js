@@ -289,3 +289,21 @@
 // }
 
 // console.log(minNumber(10, 2, 3))
+
+// big elemeint in the array
+
+function maxNumberInArry(numbers) {
+    let mat = 0
+
+    for (let i = 0; i < numbers.length; i++) {
+
+        const element = numbers[i]
+        if (element > mat) {
+            mat = element
+        }
+
+    }
+    return mat
+}
+
+console.log(maxNumberInArry([33, 2, 2, 45, 63, 34]))
