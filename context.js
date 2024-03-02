@@ -5,3 +5,7 @@ function sayName() {
     // that was very good
 }
 sayName()
+
+const newPromise = new Promise((res, rej) => {
+
+})
