@@ -407,19 +407,53 @@
 // last off day
 // last eidit
 
+//
+
+// function woddCalculator(num, num2, num3) {
+
+//     const perChairWood = 3;
+//     const perTable = 10;
+//     const perBedwood = 50;
+
+//     const total = (perChairWood * num) + (perTable + num2) + (perBedwood * num3)
+
+//     return total
+
+// }
+
+// const totalWood = woddCalculator(1, 2, 10,)
+// console.log(totalWood)
+
+const phones = [
+
+    { name: 'Samsung', camera: 12, storage: '32gp', price: 3600, color: 'red' }, { name: 'Walton', camera: 15, storage: '34gp', price: 3500, color: 'green' },
+    { name: 'Vivo', camera: 110, storage: '512gp', price: 5000, color: 'yellow' },
+    { name: 'Walton', camera: 15, storage: '34gp', price: 3500, color: 'green' },
+    { name: 'Iphone14', camera: 48, storage: '100gp', price: 9600, color: 'red' },
+
+]
+function CheapestPhone(phones) {
+
+    let cheapest = phones[0]
+
+    for (let i = 0; i < phones.length; i++) {
+
+        const index = i;
+        const phone = phones[index]
+        if (phone.price < cheapest.price) {
+            cheapest = phone
+        }
 
 
-function woddCalculator(num, num2, num3) {
+    }
+    return cheapest
 
-    const perChairWood = 3;
-    const perTable = 10;
-    const perBedwood = 50;
 
-    const total = (perChairWood * num) + (perTable + num2) + (perBedwood * num3)
 
-    return total
+    // const result = phone.filter(e => e.price >= 5000)
+
 
 }
 
-const totalWood = woddCalculator(1, 2, 10,)
-console.log(totalWood)
+const mySelection = CheapestPhone(phones)
+console.log(mySelection)
