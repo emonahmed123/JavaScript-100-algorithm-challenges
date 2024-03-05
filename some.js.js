@@ -401,10 +401,25 @@
 
 // console.log(deTicetodd([1, 2, 3, 4, -5, 54]))
 
-// function Sun() {
-//     return
-// }
+
 //  today off day.
 //second off day
 // last off day
 // last eidit
+
+
+
+function woddCalculator(num, num2, num3) {
+
+    const perChairWood = 3;
+    const perTable = 10;
+    const perBedwood = 50;
+
+    const total = (perChairWood * num) + (perTable + num2) + (perBedwood * num3)
+
+    return total
+
+}
+
+const totalWood = woddCalculator(1, 2, 10,)
+console.log(totalWood)
