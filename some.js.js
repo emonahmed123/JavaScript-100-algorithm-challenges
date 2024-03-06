@@ -424,36 +424,76 @@
 // const totalWood = woddCalculator(1, 2, 10,)
 // console.log(totalWood)
 
-const phones = [
+// const phones = [
 
-    { name: 'Samsung', camera: 12, storage: '32gp', price: 3600, color: 'red' }, { name: 'Walton', camera: 15, storage: '34gp', price: 3500, color: 'green' },
-    { name: 'Vivo', camera: 110, storage: '512gp', price: 5000, color: 'yellow' },
-    { name: 'Walton', camera: 15, storage: '34gp', price: 3500, color: 'green' },
-    { name: 'Iphone14', camera: 48, storage: '100gp', price: 9600, color: 'red' },
+//     { name: 'Samsung', camera: 12, storage: '32gp', price: 3600, color: 'red' }, { name: 'Walton', camera: 15, storage: '34gp', price: 3500, color: 'green' },
+//     { name: 'Vivo', camera: 110, storage: '512gp', price: 5000, color: 'yellow' },
+//     { name: 'Walton', camera: 15, storage: '34gp', price: 3500, color: 'green' },
+//     { name: 'Iphone14', camera: 48, storage: '100gp', price: 9600, color: 'red' },
 
-]
-function CheapestPhone(phones) {
+// ]
+// function CheapestPhone(phones) {
 
-    let cheapest = phones[0]
+//     let cheapest = phones[0]
 
-    for (let i = 0; i < phones.length; i++) {
+//     for (let i = 0; i < phones.length; i++) {
 
-        const index = i;
-        const phone = phones[index]
-        if (phone.price < cheapest.price) {
-            cheapest = phone
-        }
+//         const index = i;
+//         const phone = phones[index]
+//         if (phone.price < cheapest.price) {
+//             cheapest = phone
+//         }
+
+
+//     }
+//     return cheapest
+
+
+
+//     // const result = phone.filter(e => e.price >= 5000)
+
+
+// }
+
+// const mySelection = CheapestPhone(phones)
+
+// console.log(mySelection)
+
+
+
+// const user1 = {
+//     name: 'emon',
+//     adreesh: {
+//         one: '33'
+//     }
+// }
+
+// const user2 = { ...user1 };
+
+// user2.name = 'sonya'
+// user2.adreesh.one = '33'
+
+// console.log(user1);
+// console.log(user2)
+
+const str = 'hq kdkjf sadjf'
+
+function Every(values) {
+
+    let value = values.split(' ')
+
+    for (let i = 0; i < value.length; i++) {
+
+
+        value[i] = value[i][0].toUpperCase() + value[i].substr(1)
 
 
     }
-    return cheapest
 
 
+    const vs = value.join(' ')
 
-    // const result = phone.filter(e => e.price >= 5000)
-
-
+    return vs
 }
 
-const mySelection = CheapestPhone(phones)
-console.log(mySelection)
+console.log(Every(str))
