@@ -476,24 +476,31 @@
 // console.log(user1);
 // console.log(user2)
 
-const str = 'hq kdkjf sadjf'
+// const str = 'hq kdkjf sadjf'
 
-function Every(values) {
+// function Every(values) {
 
-    let value = values.split(' ')
+//     let value = values.split(' ')
 
-    for (let i = 0; i < value.length; i++) {
-
-
-        value[i] = value[i][0].toUpperCase() + value[i].substr(1)
+//     for (let i = 0; i < value.length; i++) {
 
 
-    }
+//         value[i] = value[i][0].toUpperCase() + value[i].substr(1)
 
 
-    const vs = value.join(' ')
+//     }
 
-    return vs
-}
 
-console.log(Every(str))
+//     const vs = value.join(' ')
+
+//     return vs
+// }
+
+// console.log(Every(str))
+
+// interveiw question solve
+const str = [1, 2, 3, 4, 5];
+
+const value = str.filter((e) => e <= 3)
+
+console.log(value)
