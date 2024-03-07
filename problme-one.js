@@ -25,3 +25,12 @@
 //         console.log(i)
 //     )
 // }
+
+
+const h1 = document.getElementById('ll')
+
+
+
+
+h1.innerText = 'jhkhk'
+

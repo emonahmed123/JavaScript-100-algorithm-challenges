@@ -499,8 +499,32 @@
 // console.log(Every(str))
 
 // interveiw question solve
-const str = [1, 2, 3, 4, 5];
+// const str = [1, 2, 3, 4, 5];
 
-const value = str.filter((e) => e <= 3)
+// // const value = str.filter((e) => e <= 3)
 
-console.log(value)
+// function calculateMonthlyExpenses(transactions, year, month) {
+//     return transactions.reduce((acc, transaction) => {
+//         const transactionYear = new Date(transaction.date).getFullYear();
+//         const transactionMonth = new Date(transaction.date).getMonth();
+
+//         if (transactionYear === year && transactionMonth === month) {
+//             acc[transaction.category] = (acc[transaction.category] || 0) + transaction.amount;
+//         }
+
+//         return acc;
+//     }, {});
+// }
+
+// const transactions = [
+//     { category: 'Food', amount: 50, date: '2024-03-10' },
+//     { category: 'Transportation', amount: 30, date: '2024-03-15' },
+//     { category: 'Food', amount: 20, date: '2024-03-20' },
+//     { category: 'Utilities', amount: 100, date: '2024-02-05' },
+//     { category: 'Transportation', amount: 50, date: '2024-03-25' }
+// ];
+// const year = 2024;
+// const month = 2;
+
+// console.log(calculateMonthlyExpenses(transactions, year, month))
+
