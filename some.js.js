@@ -528,3 +528,18 @@
 
 // console.log(calculateMonthlyExpenses(transactions, year, month))
 
+// function hourToMin(hour){
+//     const mint =hour*60
+//   }
+//   hourToMin(2)
+
+
+// function findRemainder(mod) {
+//     //write your code here
+//     //dont forget to write return
+//     const mods = 119 % 5
+//     console.log(mods)
+
+// }
+
+// findRemainder(4)
