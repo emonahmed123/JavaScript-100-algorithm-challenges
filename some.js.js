@@ -549,11 +549,11 @@ function ticketPrice(num) {
     const second100 = 90;
     const restTicketRate = 70;
 
-    if (number <= 100) {
+    if (num <= 100) {
         const price = num * first100;
         return price
     }
-    else if (number <= 200) {
+    else if (num <= 200) {
         const firstPrice = 100 * first100;
 
         const restticketQuantity = num - 100;
@@ -563,8 +563,17 @@ function ticketPrice(num) {
 
         return totalPrice
     }
+    else {
+        const firstPrice100 = 100 * first100;
+        const second = 100 * second100
+
+        const restticketQuantity = num - 200;
+        const resTicketPrice = restticketQuantity * restTicketRate
+        return resTicketPrice + firstPrice100 + second
+    }
 
 
 
 }
 
+console.log(ticketPrice(300))
