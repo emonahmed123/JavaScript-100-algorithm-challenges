@@ -544,36 +544,40 @@
 
 // findRemainder(4)
 
-function ticketPrice(num) {
-    const first100 = 100;
-    const second100 = 90;
-    const restTicketRate = 70;
+// function ticketPrice(num) {
+//     const first100 = 100;
+//     const second100 = 90;
+//     const restTicketRate = 70;
 
-    if (num <= 100) {
-        const price = num * first100;
-        return price
-    }
-    else if (num <= 200) {
-        const firstPrice = 100 * first100;
+//     if (num <= 100) {
+//         const price = num * first100;
+//         return price
+//     }
+//     else if (num <= 200) {
+//         const firstPrice = 100 * first100;
 
-        const restticketQuantity = num - 100;
-        const restticketPrice = restticketQuantity * second100;
+//         const restticketQuantity = num - 100;
+//         const restticketPrice = restticketQuantity * second100;
 
-        const totalPrice = firstPrice + restticketPrice
+//         const totalPrice = firstPrice + restticketPrice
 
-        return totalPrice
-    }
-    else {
-        const firstPrice100 = 100 * first100;
-        const second = 100 * second100
+//         return totalPrice
+//     }
+//     else {
+//         const firstPrice100 = 100 * first100;
+//         const second = 100 * second100
 
-        const restticketQuantity = num - 200;
-        const resTicketPrice = restticketQuantity * restTicketRate
-        return resTicketPrice + firstPrice100 + second
-    }
+//         const restticketQuantity = num - 200;
+//         const resTicketPrice = restticketQuantity * restTicketRate
+//         return resTicketPrice + firstPrice100 + second
+//     }
 
 
 
-}
+// }
 
-console.log(ticketPrice(300))
+// console.log(ticketPrice(300))
+
+// You are given an object with various properties.Your task is to write a JavaScript function that counts the number of properties in the object and returns the count.
+
+// Write a function named countProperties that takes an object as an argument and returns the number of properties it contains.
