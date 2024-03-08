@@ -534,7 +534,7 @@
 //   hourToMin(2)
 
 
-// function findRemainder(mod) {
+// function findRemainder(_mod) {
 //     //write your code here
 //     //dont forget to write return
 //     const mods = 119 % 5
@@ -543,3 +543,28 @@
 // }
 
 // findRemainder(4)
+
+function ticketPrice(num) {
+    const first100 = 100;
+    const second100 = 90;
+    const restTicketRate = 70;
+
+    if (number <= 100) {
+        const price = num * first100;
+        return price
+    }
+    else if (number <= 200) {
+        const firstPrice = 100 * first100;
+
+        const restticketQuantity = num - 100;
+        const restticketPrice = restticketQuantity * second100;
+
+        const totalPrice = firstPrice + restticketPrice
+
+        return totalPrice
+    }
+
+
+
+}
+
