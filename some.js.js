@@ -622,3 +622,19 @@
 //     name: "bulbul",
 //     age: 21,
 // }]))
+
+// function findingSmallest(numbers) {
+//     let small = numbers[0]
+//     for (let i = 0; i < numbers.length; i++) {
+//         const num = numbers[i]
+
+//         if (small < num) {
+//             small = num
+
+//         }
+
+//     }
+//     console.log(small)
+// }
+
+// findingSmallest([10, 33, 5, 99, 6])
