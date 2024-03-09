@@ -57,3 +57,74 @@
 // const numbers = [4, 6, 10, 12]
 // const result = averageOfSquaredElements(numbers);
 // console.log(result);
+
+
+
+
+// const findBooks = (arrOfBooks) => {
+//     //write your code here
+//     //don't forget to return
+
+//     let Book = arrOfBooks.filter(a => a.year > 2000)
+//     return Book
+
+// }
+// findBooks([
+//     {
+//         title: 'To Kill a Mockingbird',
+//         author: 'Harper Lee',
+//         year: 1960
+//     },
+
+//     {
+//         title: 'Harry Potter and the Philosopher Stone',
+//         author: 'J.K. Rowling',
+//         year: 1997
+//     },
+
+//     {
+//         title: 'The Hunger Games',
+//         author: 'Suzanne Collins',
+//         year: 2008
+//     }
+// ]
+// )
+
+
+// Number of Digits in Number
+// In this JavaScript task, you are required to create a function named num_of_digits that determines the number of digits in a given integer.The function should accept a single integer num as input, where num is a non - negative integer within the range of 0 to 2 ^ 31 - 1.
+
+// Your objective is to implement a solution without using string manipulation methods such as toString().Instead, you should devise an algorithm that directly operates on the numerical value of the input integer to count its digits.
+
+// To accomplish this, you may utilize mathematical operations, such as division and modulo, to extract individual digits from the integer and increment a count variable accordingly.By iteratively dividing the input integer by 10 and counting the number of iterations required until the integer becomes zero, you can accurately determine the number of digits present.
+
+// Your function should return an integer representing the count of digits in the given input integer.Ensure your solution handles edge cases appropriately, such as when the input integer is zero or when it contains only a single digit.
+
+// As you develop your solution, focus on efficiency, readability, and adherence to best practices in JavaScript programming.Test your function with various input values to validate its correctness and robustness.
+
+
+
+// function num_of_digits(num) {
+//     // Edge case: when num is zero, it contains only one digit
+//     if (num === 0) {
+//         return 1;
+//     }
+
+//     let count = 0;
+//     // Loop until num becomes zero
+//     // while (num !== 0) {
+//     //     // Increment count for each digit
+//     //     count++;
+//     //     // Divide num by 10 to remove the last digit
+//     //     num = Math.floor(num / 10);
+//     // }
+
+//     for (num; num !== 0; num) {
+//         count++
+//         num = Math.floor(num / 10)
+//     }
+
+//     return count;
+// }
+
+// console.log(num_of_digits(987654321))
