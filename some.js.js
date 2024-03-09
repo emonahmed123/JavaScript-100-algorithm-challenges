@@ -661,16 +661,16 @@
 // truthyCounter([])
 
 
-function sortFoodsByPrice(foods) {
-    // Sort the foods array by price in ascending order
-    return foods.sort((a, b) => a.price - b.price);
-}
+// function sortFoodsByPrice(foods) {
+//     // Sort the foods array by price in ascending order
+//     return foods.sort((a, b) => a.price - b.price);
+// }
 
-// Example usage:
-const foods = [
-    { name: "burger", price: 50 },
-    { name: "fries", price: 10 },
-];;
+// // Example usage:
+// const foods = [
+//     { name: "burger", price: 50 },
+//     { name: "fries", price: 10 },
+// ];;
 
-const sortedFoods = sortFoodsByPrice(foods);
-console.log(sortedFoods);
+// const sortedFoods = sortFoodsByPrice(foods);
+// console.log(sortedFoods);
