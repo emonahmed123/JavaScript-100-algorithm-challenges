@@ -128,3 +128,23 @@
 // }
 
 // console.log(num_of_digits(987654321))
+
+
+
+// function isJanuary1stSunday(year) {
+//     // Create a new Date object for January 1st of the given year
+//     const january1st = new Date(year, 0, 1);
+//     console.log(january1st)
+
+//     // Get the day of the week for January 1st (0 for Sunday, 1 for Monday, ..., 6 for Saturday)
+//     const dayOfWeek = january1st.getDay();
+//     console.log(dayOfWeek)
+//     // Check if January 1st falls on a Sunday (dayOfWeek === 0)
+//     if (dayOfWeek === 0) {
+//         return "YES";
+//     } else {
+//         return "NO";
+//     }
+// }
+
+// isJanuary1stSunday(2020)
