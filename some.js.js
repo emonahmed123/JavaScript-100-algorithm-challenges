@@ -638,3 +638,39 @@
 // }
 
 // findingSmallest([10, 33, 5, 99, 6])
+
+
+// Create a function which returns the number of true values there are in an array.
+
+
+// function truthyCounter(arr) {
+//     let count = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         const arrs = arr[i]
+
+//         if (arrs === true) {
+//             count = count + 1
+//         }
+
+//     }
+//     console.log(count)
+
+// }
+
+
+// truthyCounter([])
+
+
+function sortFoodsByPrice(foods) {
+    // Sort the foods array by price in ascending order
+    return foods.sort((a, b) => a.price - b.price);
+}
+
+// Example usage:
+const foods = [
+    { name: "burger", price: 50 },
+    { name: "fries", price: 10 },
+];;
+
+const sortedFoods = sortFoodsByPrice(foods);
+console.log(sortedFoods);
