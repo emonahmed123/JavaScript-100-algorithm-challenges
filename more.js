@@ -177,21 +177,22 @@
 //     "fleower", "flesow", "fleight", "flseight", "flseight"
 // ]))
 
-
+// write a function to find the longest common prefix string amongst an arr  ay of string if there is no common  prefix, return an amty string 
 
 function longestPrefix(arr) {
-    if (arr.length === 0) return ""; // Return empty string for empty array
+    if (arr.length === 0) return "";
 
-    let prefix = arr[0]; // Initialize prefix with the first string
-
-    for (let i = 1; i < arr.length; i++) {
-        for (let j = 0; j < prefix.length && j < arr[i].length; j++) {
+    let prefix = arr[0];
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = 0; j < prefix.length; j++) {
             if (prefix[j] !== arr[i][j]) {
-                prefix = prefix.slice(0, j); // Update prefix up to the mismatch
-                break;
+
+
+                prefix = prefix.slice(0, j);
             }
+
         }
-        // If prefix becomes empty, there's no common prefix, return immediately
+
         if (prefix === "") return [];
     }
 
