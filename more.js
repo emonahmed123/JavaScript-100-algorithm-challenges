@@ -148,3 +148,56 @@
 // }
 
 // isJanuary1stSunday(2020)
+
+
+
+
+
+
+
+// function longGestPrifex(arr) {
+
+//     let more = ""
+//     for (let i = 0; i < arr.length; i++) {
+//         if ((arr[0].charAt(0) === arr[i].charAt(0)) && (arr[0].charAt(1) === arr[i].charAt(1))) {
+//             more = arr[i].slice(0, 2)
+
+//         }
+//         else {
+//             return more = []
+//         }
+
+
+//     }
+//     return more
+// }
+
+
+// console.log(longGestPrifex([
+//     "fleower", "flesow", "fleight", "flseight", "flseight"
+// ]))
+
+
+
+function longestPrefix(arr) {
+    if (arr.length === 0) return ""; // Return empty string for empty array
+
+    let prefix = arr[0]; // Initialize prefix with the first string
+
+    for (let i = 1; i < arr.length; i++) {
+        for (let j = 0; j < prefix.length && j < arr[i].length; j++) {
+            if (prefix[j] !== arr[i][j]) {
+                prefix = prefix.slice(0, j); // Update prefix up to the mismatch
+                break;
+            }
+        }
+        // If prefix becomes empty, there's no common prefix, return immediately
+        if (prefix === "") return [];
+    }
+
+    return prefix;
+}
+
+// Example usage:
+const arr = ["flsower", "flsow", "flsight"];
+console.log(longestPrefix(arr)); // Output: "fl"
