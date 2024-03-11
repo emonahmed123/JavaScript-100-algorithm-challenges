@@ -177,28 +177,108 @@
 //     "fleower", "flesow", "fleight", "flseight", "flseight"
 // ]))
 
-// write a function to find the longest common prefix string amongst an arr  ay of string if there is no common  prefix, return an amty string 
+// write a function to find the longest common prefix string amongst an arr  ay of string if there is no common  prefix, return an amty string
 
-function longestPrefix(arr) {
-    if (arr.length === 0) return "";
+// function longestPrefix(arr) {
+//     if (arr.length === 0) return "";
 
-    let prefix = arr[0];
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < prefix.length; j++) {
-            if (prefix[j] !== arr[i][j]) {
+//     let prefix = arr[0];
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < prefix.length; j++) {
+//             if (prefix[j] !== arr[i][j]) {
 
 
-                prefix = prefix.slice(0, j);
-            }
+//                 prefix = prefix.slice(0, j);
+//             }
 
-        }
+//         }
 
-        if (prefix === "") return [];
+//         if (prefix === "") return [];
+//     }
+
+//     return prefix;
+// }
+
+// // Example usage:
+// const arr = ["flsower", "flsow", "flsight"];
+// console.log(longestPrefix(arr)); // Output: "fl"
+
+
+
+// var filter = function (arr, fn) {
+//     let number = []
+//     for (let i = 0; i < arr.length; i++) {
+
+//         if (arr[i] > 10) {
+//             number.push(fn(arr[i], i))
+//         }
+
+//     }
+//     return number
+// };
+
+
+// var filter = function (arr, fn) {
+//     let number = []
+//     for (let i = 0; i < arr.length; i++) {
+//         if (fn(arr[i], i)) {
+//             console.log(number.push(arr[i]));
+//         }
+
+//     }
+//     return (number)
+// };
+
+
+
+// console.log(filter([0, 10, 20, 30], (element, index) => element > 10));
+
+function ballss(sem, tam) {
+    const val1 = sem;
+    const val2 = tam;
+    const failnel = val1.concat(val2)
+    const abc = failnel.split('')
+
+    let last = []
+    for (let i = 0; i < abc.length; i++) {
+
+
+        last[abc[i]] = i
+
     }
+    const sortss = failnel.sort((a, b) => {
+        return last[a] - last[b]
 
-    return prefix;
+    })
+    console.log(last)
+    console.log(sortss)
+
 }
 
-// Example usage:
-const arr = ["flsower", "flsow", "flsight"];
-console.log(longestPrefix(arr)); // Output: "fl"
+console.log(ballss("cba", "abcd"))
+
+
+// var customSortString = function (order, s) {
+//     const charMap = [];
+
+//     // Create a map to store the positions of characters in the order string
+//     for (let i = 0; i < order.length; i++) {
+//         charMap[order[i]] = i;
+
+//     }
+
+//     // Sort characters based on their positions in the order string
+//     const sortedS = s.split('').sort((a, b) => {
+//         return charMap[a] - charMap[b];
+
+//     });
+
+//     // Join the sorted characters to form the permuted string
+//     return sortedS.join('');
+// };
+
+// // Example usage:
+// const order = "cbad";
+// const s = "abcd";
+
+// console.log(customSortString(order, s));
