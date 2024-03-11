@@ -515,7 +515,7 @@
 //         return acc;
 //     }, {});
 // }
-
+    
 // const transactions = [
 //     { category: 'Food', amount: 50, date: '2024-03-10' },
 //     { category: 'Transportation', amount: 30, date: '2024-03-15' },

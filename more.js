@@ -233,29 +233,6 @@
 
 // console.log(filter([0, 10, 20, 30], (element, index) => element > 10));
 
-function ballss(sem, tam) {
-    const val1 = sem;
-    const val2 = tam;
-    const failnel = val1.concat(val2)
-    const abc = failnel.split('')
-
-    let last = []
-    for (let i = 0; i < abc.length; i++) {
-
-
-        last[abc[i]] = i
-
-    }
-    const sortss = failnel.sort((a, b) => {
-        return last[a] - last[b]
-
-    })
-    console.log(last)
-    console.log(sortss)
-
-}
-
-console.log(ballss("cba", "abcd"))
 
 
 // var customSortString = function (order, s) {
@@ -282,3 +259,91 @@ console.log(ballss("cba", "abcd"))
 // const s = "abcd";
 
 // console.log(customSortString(order, s));
+
+
+// var removeDuplicates = function (nums) {
+
+//     let uniqeId = nums[0]
+
+//     for (let i = 0; i < nums.length; i++) {
+
+//         if (uniqeId !== nums[i]) {
+//             uniqeId = (nums[i])
+//         }
+//     }
+
+//     console.log(uniqeId)
+// };
+
+
+// removeDuplicates([1, 1, 2, 3, 4, 4])
+
+
+// function removeDuplicates(nums) {
+//     if (nums.length === 0) return 0; // Edge case: empty array
+
+//     let uniqueIndex = 0; // Pointer to track the position of the next unique element
+
+//     // Iterate through the array starting from the second element
+//     for (let i = 1; i < nums.length; i++) {
+//         // If the current element is different from the previous unique element
+//         if (nums[i] !== nums[uniqueIndex]) {
+//             uniqueIndex++; // Move the unique pointer forward
+//             nums[uniqueIndex] = nums[i]; // Update the array with the unique element
+//         }
+//     }
+
+//     // Return the length of the unique elements (uniqueIndex + 1)
+//     return uniqueIndex + 1;
+// }
+
+// Example usage:
+
+
+// remove duplicate arry
+
+// var removeDuplicates = function (nums) {
+//     let i = 0;
+//     let bal = []
+//     for (let j = 1; j < nums.length; j++) {
+//         if (nums[i] !== nums[j]) {
+//             i++;
+//             nums[i] = nums[j];
+
+//             bal.push(nums[i])
+//         }
+//     }
+
+//     return bal;
+
+
+
+// };
+
+
+// const nums = ['apple', 'apple', 'sumon'];
+// console.log(removeDuplicates(nums))
+
+
+// cheak the dupllicate string in array
+
+function hello(arr) {
+
+    let newarr = [];
+    for (let i = 0; i < arr.length; i++) {
+
+
+        if (newarr.includes(arr[i]) !== true) {
+
+
+
+            newarr.push(arr[i])
+        }
+
+
+    }
+    return newarr
+
+}
+
+console.log(hello(['apple', 'apple', 'sumon', 'emon', 'emon']))
