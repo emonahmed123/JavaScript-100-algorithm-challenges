@@ -327,23 +327,51 @@
 
 // cheak the dupllicate string in array
 
-function hello(arr) {
+// function hello(arr) {
 
-    let newarr = [];
-    for (let i = 0; i < arr.length; i++) {
-
-
-        if (newarr.includes(arr[i]) !== true) {
+//     let newarr = [];
+//     for (let i = 0; i < arr.length; i++) {
 
 
+//         if (newarr.includes(arr[i]) !== true) {
 
-            newarr.push(arr[i])
+
+
+//             newarr.push(arr[i])
+//         }
+
+
+//     }
+//     return newarr
+
+// }
+
+// console.log(hello(['apple', 'apple', 'sumon', 'emon', 'emon']))
+
+
+function findPivotInteger(n) {
+    let totalSum = (n * (n + 1)) / 2;  // Sum of all elements from 1 to n
+    console.log(totalSum)
+    let leftSum = 0;
+
+    for (let x = 0; x <= n; x++) {
+        leftSum = leftSum + x;
+
+
+        let rightSum = totalSum - leftSum;
+        console.log(rightSum)
+        if (leftSum === rightSum) {
+
+            return 'fuck';
+
         }
 
 
-    }
-    return newarr
 
+    }
+    return -1;
 }
 
-console.log(hello(['apple', 'apple', 'sumon', 'emon', 'emon']))
+// Example usage:
+let n = 8;
+console.log(findPivotInteger(n));  // Output: 5
