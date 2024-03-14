@@ -355,19 +355,42 @@
 // Return the pivot integer x. If no such integer exists, return -1. It is guaranteed that there will be at most one pivot index for the given input
 
 
-function findPivotInteger(n) {
+// function findPivotInteger(n) {
 
 
-    let x = Math.sqrt(n * (n + 1) / 2);
-    console.log(x)
+//     let x = Math.sqrt(n * (n + 1) / 2);
+//     console.log(x)
 
-    if (x % 1 !== 0) {
-        return -1;
-    } else {
-        return Math.floor(x);
+//     if (x % 1 !== 0) {
+//         return -1;
+//     } else {
+//         return Math.floor(x);
+//     }
+// }
+
+// // Example usage:
+// let n = 11;
+// console.log(findPivotInteger(n));  // Output: 5
+
+
+var removeElement = function (nums, val) {
+
+
+    let left = [0]
+
+
+    for (let i = 0; i < nums.length; i++) {
+
+        if (nums[i] !== val) {
+
+            nums[left] = nums[i]
+            left++
+        }
     }
-}
 
-// Example usage:
-let n = 11;
-console.log(findPivotInteger(n));  // Output: 5
+    return left
+
+};
+
+
+console.log(removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2))
