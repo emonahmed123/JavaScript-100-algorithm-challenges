@@ -349,29 +349,25 @@
 // console.log(hello(['apple', 'apple', 'sumon', 'emon', 'emon']))
 
 
+// Given a positive integer n, find the pivot integer x such that:
+
+// The sum of all elements between 1 and x inclusively equals the sum of all elements between x and n inclusively.
+// Return the pivot integer x. If no such integer exists, return -1. It is guaranteed that there will be at most one pivot index for the given input
+
+
 function findPivotInteger(n) {
-    let totalSum = (n * (n + 1)) / 2;  // Sum of all elements from 1 to n
-    console.log(totalSum)
-    let leftSum = 0;
-
-    for (let x = 0; x <= n; x++) {
-        leftSum = leftSum + x;
 
 
-        let rightSum = totalSum - leftSum;
-        console.log(rightSum)
-        if (leftSum === rightSum) {
+    let x = Math.sqrt(n * (n + 1) / 2);
+    console.log(x)
 
-            return 'fuck';
-
-        }
-
-
-
+    if (x % 1 !== 0) {
+        return -1;
+    } else {
+        return Math.floor(x);
     }
-    return -1;
 }
 
 // Example usage:
-let n = 8;
+let n = 11;
 console.log(findPivotInteger(n));  // Output: 5
