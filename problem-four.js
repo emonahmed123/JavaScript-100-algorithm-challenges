@@ -8,5 +8,5 @@ function secuence(inputArray) {
     return true
 }
 
-console.log(secuence([1, 2, 3, 4]))
+console.log(secuence([1, 2, 5, 4]))
 // console.log(secuence([1, 5, 3, 4]))

@@ -373,24 +373,79 @@
 // console.log(findPivotInteger(n));  // Output: 5
 
 
-var removeElement = function (nums, val) {
+// var removeElement = function (nums, val) {
 
 
-    let left = [0]
+//     let left = [0]
 
 
+//     for (let i = 0; i < nums.length; i++) {
+
+//         if (nums[i] !== val) {
+
+//             nums[left] = nums[i]
+//             left++
+//         }
+//     }
+
+//     return left
+
+// };
+
+
+// console.log(removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2))
+
+
+
+// var twoSum = function (nums, target) {
+
+//     let main = []
+
+
+//     for (let i = 1; i < nums.length; i++) {
+//         console.log(nums[i])
+//         if (nums[i]) {
+
+//             return [main[i], i]
+//         }
+
+
+//     }
+
+// };
+
+// console.log(twoSum([2, 7, 11, 15], 9))
+
+
+
+
+
+var searchInsert = function (nums, target) {
+
+
+    let vAlu = 0;
+
+    // const findIndex = nums.findIndex((number) => number == target);
+    // console.log(findIndex)
     for (let i = 0; i < nums.length; i++) {
 
-        if (nums[i] !== val) {
 
-            nums[left] = nums[i]
-            left++
+        if (nums[i] === target) {
+            vAlu = MainValue
         }
+
+
     }
 
-    return left
 
+    if (vAlu > 0) {
+
+        return nums.indexOf(vAlu)
+    }
+    else {
+        let sla = 1
+        return sla
+    }
 };
 
-
-console.log(removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2))
+console.log(searchInsert([1, 3, 5, 6], 2))
