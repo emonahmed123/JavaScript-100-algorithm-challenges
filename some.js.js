@@ -691,14 +691,43 @@
 
 
 
-function temperatureConverter(valNum) {
+// function temperatureConverter(valNum) {
 
-    const Celsius = (valNum - 32) / 1.8
-    const value = parseFloat(Celsius.toFixed(2))
-    return value
+//     const Celsius = (valNum - 32) / 1.8
+//     const value = parseFloat(Celsius.toFixed(2))
+//     return value
 
 
+// }
+
+
+// console.log(temperatureConverter(103))
+
+
+// Find the average
+// Write a program to calculate the average marks of Mathematics, Biology, Chemistry, Physics, and Bangla of a student.
+
+//     Input:
+// The input parameter will be an array of integers, where each integer represents the mark of a subject given above.
+
+//     Output:
+// Print the result in 2 decimal places.If you get a fraction rounded up to 2 decimal places.The output must have to be in number format.
+
+//     Hints: First check if your output is in number format or string format by typeof operator.
+
+function average(arrOfMarks) {
+
+    let total = 0
+
+    for (let i = 0; i < arrOfMarks.length; i++) {
+
+        total = total + arrOfMarks[i]
+
+    }
+
+    let gor = total / arrOfMarks.length
+    let totalGor = parseFloat(gor.toFixed(2))
+    return totalGor
 }
 
-
-console.log(temperatureConverter(103))
+console.log(average([75.25, 65, 80, 35.45, 99.50]));
