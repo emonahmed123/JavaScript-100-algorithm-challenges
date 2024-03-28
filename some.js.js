@@ -689,3 +689,16 @@
 
 // The formula below shows how to convert from Fahrenheit to Celsius temperature measurements:
 
+
+
+function temperatureConverter(valNum) {
+
+    const Celsius = (valNum - 32) / 1.8
+    const value = parseFloat(Celsius.toFixed(2))
+    return value
+
+
+}
+
+
+console.log(temperatureConverter(103))
