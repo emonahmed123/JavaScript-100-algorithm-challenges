@@ -749,7 +749,7 @@
 // In this challenge, we learn about switch statements.
 
 // Task
-// Complete the getLetter(s) function in the editor. It has one parameter: a string, 
+// Complete the getLetter(s) function in the editor. It has one parameter: a string,
 // , consisting of lowercase English alphabetic letters (i.e., a through z). It must return A, B, C, or D depending on the following criteria:
 
 // If the first character in string s is in the set {a , e, i, o, u} then return A.
@@ -820,8 +820,33 @@
 // }
 
 
-let s = "adfgt";
+// let s = "adfgt";
 
-console.log(getLetter(s));
+// console.log(getLetter(s));
 
+function findGrade(marks) {
+    //write your code here
+    //don't forget to write return
+    let grade = ''
+    if (marks >= 80) {
+        grade = 'A'
 
+    }
+    else if (marks >= 60) {
+        grade = 'B'
+    }
+
+    else if (marks >= 50) {
+        grade = 'c'
+    }
+    else if (marks >= 40) {
+        grade = 'd'
+    }
+
+    else if (marks >= 39) {
+        grade = 'F'
+    }
+    return grade
+}
+
+console.log(findGrade(40))
