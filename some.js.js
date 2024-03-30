@@ -824,29 +824,67 @@
 
 // console.log(getLetter(s));
 
-function findGrade(marks) {
-    //write your code here
-    //don't forget to write return
-    let grade = ''
-    if (marks >= 80) {
-        grade = 'A'
+// function findGrade(marks) {
+//     //write your code here
+//     //don't forget to write return
+//     let grade = ''
+//     if (marks >= 80) {
+//         grade = 'A'
 
-    }
-    else if (marks >= 60) {
-        grade = 'B'
+//     }
+//     else if (marks >= 60) {
+//         grade = 'B'
+//     }
+
+//     else if (marks >= 50) {
+//         grade = 'c'
+//     }
+//     else if (marks >= 40) {
+//         grade = 'd'
+//     }
+
+//     else if (marks >= 39) {
+//         grade = 'F'
+//     }
+//     return grade
+// }
+
+// console.log(findGrade(40))
+
+function groupAnagrams(inputStrings) {
+    const map = {};
+
+    // Iterate through each string in the input array
+    for (let i = 0; i < inputStrings.length; i++) {
+        const str = inputStrings[i].toLowerCase();
+        // Sort the characters of the string alphabetically
+        const sortedStr = str.split('').sort().join('');
+
+        // Check if the sorted string is already in the map
+        if (map.hasOwnProperty(sortedStr)) {
+            // If it exists, push the original string to its corresponding array
+            map[sortedStr].push(inputStrings[i]);
+        } else {
+            // If it doesn't exist, create a new entry in the map
+            map[sortedStr] = [inputStrings[i]];
+        }
     }
 
-    else if (marks >= 50) {
-        grade = 'c'
-    }
-    else if (marks >= 40) {
-        grade = 'd'
+    const result = [];
+
+    // Iterate through the keys of the map to form the result array
+    for (const key in map) {
+        if (map.hasOwnProperty(key)) {
+            result.push(map[key]);
+        }
     }
 
-    else if (marks >= 39) {
-        grade = 'F'
-    }
-    return grade
+    // Return the result array
+    return result;
 }
 
-console.log(findGrade(40))
+// Sample input
+const inputStrings = ["eat", "tea", "tan", "ate", "nat", "bat"];
+
+// Output
+console.log(groupAnagrams(inputStrings));
