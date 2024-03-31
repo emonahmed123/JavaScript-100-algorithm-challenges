@@ -851,40 +851,39 @@
 
 // console.log(findGrade(40))
 
-function groupAnagrams(inputStrings) {
-    const map = {};
+// function groupAnagrams(inputStrings) {
+//     const map = {};
 
-    // Iterate through each string in the input array
-    for (let i = 0; i < inputStrings.length; i++) {
-        const str = inputStrings[i].toLowerCase();
-        // Sort the characters of the string alphabetically
-        const sortedStr = str.split('').sort().join('');
 
-        // Check if the sorted string is already in the map
-        if (map.hasOwnProperty(sortedStr)) {
-            // If it exists, push the original string to its corresponding array
-            map[sortedStr].push(inputStrings[i]);
-        } else {
-            // If it doesn't exist, create a new entry in the map
-            map[sortedStr] = [inputStrings[i]];
-        }
-    }
+//     for (let i = 0; i < inputStrings.length; i++) {
+//         const str = inputStrings[i].toLowerCase();
 
-    const result = [];
+//         const sortedStr = str.split('').sort().join('');
 
-    // Iterate through the keys of the map to form the result array
-    for (const key in map) {
-        if (map.hasOwnProperty(key)) {
-            result.push(map[key]);
-        }
-    }
 
-    // Return the result array
-    return result;
-}
+//         if (map.hasOwnProperty(sortedStr)) {
 
-// Sample input
-const inputStrings = ["eat", "tea", "tan", "ate", "nat", "bat"];
+//             map[sortedStr].push(inputStrings[i]);
+//         } else {
 
-// Output
-console.log(groupAnagrams(inputStrings));
+//             map[sortedStr] = [inputStrings[i]];
+//         }
+//     }
+
+//     const result = [];
+
+
+//     for (const key in map) {
+//         if (map.hasOwnProperty(key)) {
+//             result.push(map[key]);
+//         }
+//     }
+
+//     return result;
+// }
+
+// // Sample input
+// const inputStrings = ["eat", "tea", "tan", "ate", "nat", "bat"];
+
+// // Output
+// console.log(groupAnagrams(inputStrings));
