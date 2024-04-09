@@ -892,25 +892,42 @@
 
 
 
-function numberDifferenceTripleChecker(number) {
+// function numberDifferenceTripleChecker(number) {
 
 
-    if (number <= 10) {
-        const result = 10 - number
-        return result
-    }
+//     if (number <= 10) {
+//         const result = 10 - number
+//         return result
+//     }
 
-    if (number > 20) {
-        const result = number - 10
+//     if (number > 20) {
+//         const result = number - 10
 
-        const data = result * 3
+//         const data = result * 3
 
-        return data
-    }
+//         return data
+//     }
 
 
+// }
+
+
+
+// console.log(numberDifferenceTripleChecker(20))
+
+
+
+function flatArray(arr) {
+    let empty = [];
+    arr.forEach(subArray => {
+        if (Array.isArray(subArray)) {
+
+            empty.push(...flatArray(subArray));
+        } else {
+            empty.push(subArray);
+        }
+    });
+    return empty;
 }
+console.log(flatArray([[1], [2], [[3], [4]]]));
 
-
-
-console.log(numberDifferenceTripleChecker(20))
