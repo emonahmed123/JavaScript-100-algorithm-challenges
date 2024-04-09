@@ -889,3 +889,28 @@
 // console.log(groupAnagrams(inputStrings));
 
 //  solve more than 100 problem
+
+
+
+function numberDifferenceTripleChecker(number) {
+
+
+    if (number <= 10) {
+        const result = 10 - number
+        return result
+    }
+
+    if (number > 20) {
+        const result = number - 10
+
+        const data = result * 3
+
+        return data
+    }
+
+
+}
+
+
+
+console.log(numberDifferenceTripleChecker(20))
