@@ -917,17 +917,32 @@
 
 
 
-function flatArray(arr) {
-    let empty = [];
-    arr.forEach(subArray => {
-        if (Array.isArray(subArray)) {
+// function flatArray(arr) {
+//     let empty = [];
+//     arr.forEach(subArray => {
+//         if (Array.isArray(subArray)) {
 
-            empty.push(...flatArray(subArray));
-        } else {
-            empty.push(subArray);
-        }
-    });
-    return empty;
-}
-console.log(flatArray([[1], [2], [[3], [4]]]));
+//             empty.push(...flatArray(subArray));
+//         } else {
+//             empty.push(subArray);
+//         }
+//     });
+//     return empty;
+// }
+// console.log(flatArray([[1], [2], [[3], [4]]]));
 
+
+
+// function cheakVowel(str) {
+//     let count = 0
+//     let vowel = ['a', 'i', 'u', 'e', 'o']
+//     for (let i = 0; i < str.length; i++) {
+
+//         if (vowel.includes(str[i])) {
+//             count = count + 1
+//         }
+//     }
+//     return count
+// }
+
+// console.log(cheakVowel('hello world'))
