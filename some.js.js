@@ -946,3 +946,6 @@
 // }
 
 // console.log(cheakVowel('hello world'))
+
+
+//  today no code
