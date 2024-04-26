@@ -851,42 +851,42 @@
 
 // console.log(findGrade(40))
 
-// function groupAnagrams(inputStrings) {
-//     const map = {};
+function groupAnagrams(inputStrings) {
+    const map = {};
 
 
-//     for (let i = 0; i < inputStrings.length; i++) {
-//         const str = inputStrings[i].toLowerCase();
+    for (let i = 0; i < inputStrings.length; i++) {
+        const str = inputStrings[i].toLowerCase();
 
-//         const sortedStr = str.split('').sort().join('');
+        const sortedStr = str.split('').sort().join('');
+        console.log(sortedStr)
+
+        if (map.hasOwnProperty(sortedStr)) {
+
+            map[sortedStr].push(inputStrings[i]);
+        } else {
+
+            map[sortedStr] = [inputStrings[i]];
+        }
+    }
+
+    const result = [];
 
 
-//         if (map.hasOwnProperty(sortedStr)) {
+    for (const key in map) {
+        if (map.hasOwnProperty(key)) {
+            result.push(map[key]);
+        }
+    }
 
-//             map[sortedStr].push(inputStrings[i]);
-//         } else {
+    return result;
+}
 
-//             map[sortedStr] = [inputStrings[i]];
-//         }
-//     }
+// Sample input
+const inputStrings = ["eat", "tea", "tan", "ate", "nat", "bat"];
 
-//     const result = [];
-
-
-//     for (const key in map) {
-//         if (map.hasOwnProperty(key)) {
-//             result.push(map[key]);
-//         }
-//     }
-
-//     return result;
-// }
-
-// // Sample input
-// const inputStrings = ["eat", "tea", "tan", "ate", "nat", "bat"];
-
-// // Output
-// console.log(groupAnagrams(inputStrings));
+// Output
+console.log(groupAnagrams(inputStrings));
 
 //  solve more than 100 problem
 
