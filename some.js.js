@@ -883,7 +883,7 @@ function groupAnagrams(inputStrings) {
 }
 
 // Sample input
-const inputStrings = ["eat", "tea", "tan", "ate", "nat", "bat"];
+const inputStrings = ["eat", "tea", "tan", "ate", "nat", "bat", "sad"];
 
 // Output
 console.log(groupAnagrams(inputStrings));
