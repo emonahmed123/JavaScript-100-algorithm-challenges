@@ -23,6 +23,32 @@
 
 
 
+// console.log(result)
+
+
+
+const Callback = (calculateSquer) => {
+    const num = [1, 3, 4, 5]
+    if (num.length > 0) {
+        return calculateSquer(num)
+
+
+    }
+}
+const calculateSquer = (num) => {
+
+    const res = num.reduce((acc, item) => acc + Math.pow(item, 2), 0)
+
+    return res
+
+}
+
+
+
+
+
+console.log(Callback(calculateSquer))
+
 
 // const calculate = (arrOfNumbers) => {
 //     //write your code here
@@ -39,7 +65,8 @@
 //     return res
 // }
 
-// calculate([4, 6, 10, 12])
+// console.log(calculate([4, 6, 10, 12]));
+
 
 
 
@@ -53,7 +80,7 @@
 //     return average;
 // };
 
-// Example usage:
+// // // Example usage:
 // const numbers = [4, 6, 10, 12]
 // const result = averageOfSquaredElements(numbers);
 // console.log(result);
@@ -420,32 +447,32 @@
 
 
 
-var searchInsert = function (nums, target) {
+// var searchInsert = function (nums, target) {
 
 
-    let vAlu = 0;
+//     let vAlu = 0;
 
-    // const findIndex = nums.findIndex((number) => number == target);
-    // console.log(findIndex)
-    for (let i = 0; i < nums.length; i++) {
-
-
-        if (nums[i] === target) {
-            vAlu = MainValue
-        }
+//     // const findIndex = nums.findIndex((number) => number == target);
+//     // console.log(findIndex)
+//     for (let i = 0; i < nums.length; i++) {
 
 
-    }
+//         if (nums[i] === target) {
+//             vAlu = MainValue
+//         }
 
 
-    if (vAlu > 0) {
+//     }
 
-        return nums.indexOf(vAlu)
-    }
-    else {
-        let sla = 1
-        return sla
-    }
-};
 
-console.log(searchInsert([1, 3, 5, 6], 2))
+//     if (vAlu > 0) {
+
+//         return nums.indexOf(vAlu)
+//     }
+//     else {
+//         let sla = 1
+//         return sla
+//     }
+// };
+
+// console.log(searchInsert([1, 3, 5, 6], 2))

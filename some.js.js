@@ -106,23 +106,25 @@
 
 
 
-// let areaOfShapes = 'square'
-// let a = 5;
-// let b = 10;
-// let result
-// switch (areaOfShapes) {
-//     case "square":
-//         result = a * a
-//         console.log(result)
-//         break
-//     case "rectangle":
-//         result = a * b
-//         console.log(result)
-//         break
+let areaOfShapes = 'ty'
+let a = 5;
+let b = 10;
+let result
+switch (areaOfShapes) {
+    case "square":
+        result = a * a
+        console.log(result)
+        break
+    case "rectangle":
+        result = a * b
+        console.log(result)
+        break
 
 
-//     default:
-// }
+    default: result = 1
+        console.log(result)
+
+}
 
 
 
@@ -207,7 +209,7 @@
 // }
 // Oddsum(plus);
 
-// const sonay = 'i love.you and fuck you'
+// const sonay = 'i love.you '
 
 // const emon = sonay.split('')
 // console.log(emon);
@@ -855,42 +857,42 @@
 
 // console.log(findGrade(40))
 
-function groupAnagrams(inputStrings) {
-    const map = {};
+// function groupAnagrams(inputStrings) {
+//     const map = {};
 
 
-    for (let i = 0; i < inputStrings.length; i++) {
-        const str = inputStrings[i].toLowerCase();
+//     for (let i = 0; i < inputStrings.length; i++) {
+//         const str = inputStrings[i].toLowerCase();
 
-        const sortedStr = str.split('').sort().join('');
-        console.log(sortedStr)
+//         const sortedStr = str.split('').sort().join('');
+//         console.log(sortedStr)
 
-        if (map.hasOwnProperty(sortedStr)) {
+//         if (map.hasOwnProperty(sortedStr)) {
 
-            map[sortedStr].push(inputStrings[i]);
-        } else {
+//             map[sortedStr].push(inputStrings[i]);
+//         } else {
 
-            map[sortedStr] = [inputStrings[i]];
-        }
-    }
+//             map[sortedStr] = [inputStrings[i]];
+//         }
+//     }
 
-    const result = [];
+//     const result = [];
 
 
-    for (const key in map) {
-        if (map.hasOwnProperty(key)) {
-            result.push(map[key]);
-        }
-    }
+//     for (const key in map) {
+//         if (map.hasOwnProperty(key)) {
+//             result.push(map[key]);
+//         }
+//     }
 
-    return result;
-}
+//     return result;
+// }
 
-// Sample input
-const inputStrings = ["eat", "tea", "tan", "ate", "nat", "bat", "sad"];
+// // Sample input
+// const inputStrings = ["eat", "tea", "tan", "ate", "nat", "bat", "sad"];
 
-// Output
-console.log(groupAnagrams(inputStrings));
+// // Output
+// console.log(groupAnagrams(inputStrings));
 
 //  solve more than 100 problem
 
