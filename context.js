@@ -35,13 +35,13 @@
 // console.log("Exiting global excution context")
 
 
-function first() {
-    return "frist"
-}
+// function first() {
+//     return "frist"
+// }
 
-function second() {
-    return "second"
-}
+// function second() {
+//     return "second"
+// }
 
 
 

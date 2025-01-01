@@ -1,45 +1,43 @@
 
+// const getData = new Promise((resolve, reject) => {
+
+//     const reS = document.getElementById("Res");
+//     const reJ = document.getElementById("Rej");
+
+//     reS.addEventListener('click', () => {
+
+//         resolve('hello')
+//     })
+//     reJ.addEventListener('click', () => {
+
+//         reject('jee')
+//     })
+
+
+//     // const num = Math.random() * 10;
+
+//     // console.log(num)
+//     // if (num < 5) {
 
 
 
-const getData = new Promise((resolve, reject) => {
-    const reS = document.getElementById("Res");
-    const reJ = document.getElementById("Rej");
+//     //     resolve('33')
 
-    reS.addEventListener('click', () => {
-
-        resolve('hello')
-    })
-    reJ.addEventListener('click', () => {
-
-        reject('jee')
-    })
-
-
-    // const num = Math.random() * 10;
-
-    // console.log(num)
-    // if (num < 5) {
-
-
-
-    //     resolve('33')
-
-    // }
-    // else (
-    //     reject('no data')
-    // )
-
+//     // }
+//     // else (
+//     //     reject('no data')
+//     // )
 
 
 
 
-})
-console.log(getData)
 
-getData
-    .then(data => console.log('loade', data))
-    .catch(err => console.log('Err', err))
+// })
+// console.log(getData)
+
+// getData
+//     .then(data => console.log('loade', data))
+//     .catch(err => console.log('Err', err))
 
 // console.log(getData)
 // async function myfnc() {
@@ -76,3 +74,20 @@ getData
 //         console.error("Error:", error);
 //     }
 // );
+
+
+
+const myPromise = new Promise((res, rej) => {
+
+    res('dode', my())
+
+
+})
+
+function my() {
+    console.log('me done')
+}
+
+
+
+console.log(myPromise)

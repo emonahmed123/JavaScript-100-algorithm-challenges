@@ -1,5 +1,5 @@
 function test() {
-
+    var a = 'd'
 }
 
-console.dir(test.prototype)
+console.log(test.prototype)
