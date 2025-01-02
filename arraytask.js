@@ -91,6 +91,21 @@ T-003: Create an array of 6 elements using the Array literals and access the fou
 /*T-011:  Empty an array using its length property*/
 
 
-const myArray = [10, 20, 30, 40, 50];
-myArray.length = 0;
-console.log(myArray) 
+// const myArray = [10, 20, 30, 40, 50];
+// myArray.length = 0;
+// console.log(myArray)
+
+/*T-012: Create an array of 10 elements(number 1 to 10). Resize the array to length 6 once you find the number 5 in that array. Hint: Use for-loop*/
+
+// const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+
+// for (let i = 0; i < myArray.length; i++) {
+//     if (myArray[i] == myArray[5]) {
+//         myArray.length = 6
+//         break
+//     }
+// }
+
+// console.log(myArray) // [1, 2, 3, 4, 5, 6]
+
