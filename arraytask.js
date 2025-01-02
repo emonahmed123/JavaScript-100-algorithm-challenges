@@ -69,7 +69,28 @@ T-003: Create an array of 6 elements using the Array literals and access the fou
 
 
 
-const myArray = ["rice", "fish", "meat", "vegetable", "fruits", "cake", "ice-cream", "chocolate", "biscuit", "bread"];
+// const myArray = ["rice", "fish", "meat", "vegetable", "fruits", "cake", "ice-cream", "chocolate", "biscuit", "bread"];
 
-const [, , , , , fruits] = myArray;
-console.log(fruits) // cake
+// const [, , , , , fruits] = myArray;
+// console.log(fruits) // cake
+
+/*T-009: Take out the last 8 food items from the above array using the Array destructuring. Hint: rest parameter.*/
+
+// const myArray = ["rice", "fish", "meat", "vegetable", "fruits", "cake", "ice-cream", "chocolate", "biscuit", "bread"];
+// const [, , ...foods] = myArray;
+// console.log(foods) // ["vegetable", "fruits", "cake", "ice-cream", "chocolate", "biscuit", "bread"]
+
+/*T-010: Create an array of 5 elements and swap the first element with the last element of the array.*/
+
+// const myArray = [10, 20, 30, 40, 50];
+
+// [myArray[0], myArray[myArray.length - 1]] = [myArray[myArray.length - 1], myArray[0]];
+// console.log(myArray) // [50, 20, 30, 40, 10]
+
+
+/*T-011:  Empty an array using its length property*/
+
+
+const myArray = [10, 20, 30, 40, 50];
+myArray.length = 0;
+console.log(myArray) 
