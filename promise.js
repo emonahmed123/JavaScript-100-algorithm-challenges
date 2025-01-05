@@ -77,17 +77,37 @@
 
 
 
-const myPromise = new Promise((res, rej) => {
+// const myPromise = new Promise((res, rej) => {
 
-    res('dode', my())
+//     res('dode', my())
 
+
+// })
+
+// function my() {
+//     console.log('me done')
+// }
+
+
+
+// console.log(myPromise)
+
+
+
+
+
+const newBal = new Promise((resolve, reject) => {
+    const bal = 8;
+    if (bal > 3) {
+        resolve('done')
+    } else {
+        reject('no')
+    }
 
 })
 
-function my() {
-    console.log('me done')
-}
+// console.log(newBal)    // 3
+
+newBal.then(data => console.log(data)).catch(err => console.log(err))  // 4
 
 
-
-console.log(myPromise)
