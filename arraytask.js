@@ -111,7 +111,20 @@ T-003: Create an array of 6 elements using the Array literals and access the fou
 
 /*T-013:Create an Array of 10 elements. You can empty the array in multiple ways: using the length property, using the pop() method, using the shift() method, setting the array with [], or the splice() method. Which among these methods are most efficient and why.*/
 
-const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-myArray.length = 0;
-console.log(myArray) // []
+// myArray.length = 0;
+// console.log(myArray) // []
+
+/*T-014:What happens when you concatenate two empty arrays */
+// const arr = [];
+// const arr2 = [];
+// const arr3 = arr.concat(arr2);
+// console.log(arr3) // []
+
+
+// const arr = []
+// const arr2 = []
+// const arr3 = arr + arr2
+// console.log(arr3)
+
