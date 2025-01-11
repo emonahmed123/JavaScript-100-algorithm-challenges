@@ -128,3 +128,24 @@ T-003: Create an array of 6 elements using the Array literals and access the fou
 // const arr3 = arr + arr2
 // console.log(arr3)
 
+
+/*T-015:How can you check if a value is partially matching with any of the elements of an Array*/
+
+// const myArray = ["rice", "fish", "meat", "vegetable", "fruits", "cake", "ice-cream", "chocolate", "biscuit", "bread"];
+
+// const value = "choco";
+// const isMatch = myArray.some((element) => element.includes(value));
+// console.log(isMatch) // true    // chocolate is partially matching with choco   // true 
+
+
+const newArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const reduArr = newArr.reduce((acc, curr) => {
+
+    if (newArr.length) {
+        acc.push(curr)
+    }
+    return acc
+}, [])
+
+console.log(reduArr) // 55

@@ -1,5 +1,14 @@
-function test() {
-    var a = 'd'
-}
+const handle = (e) => {
+    e.preventDefault();
 
-console.log(test.prototype)
+    const name = e.target.emon.value
+    const sumon = e.target.sumon.value
+    if (
+        sumon == ""
+    ) {
+        alert("Please enter your name and email")
+    }
+    else {
+        alert("Thank you for your submission")
+    }
+}
