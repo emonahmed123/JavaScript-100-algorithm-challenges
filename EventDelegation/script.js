@@ -25,3 +25,6 @@ const addElement = () => {
     list.appendChild(newElement)
 
 }
+
+
+// event capturing or Trickleing bubbling event delegation event propagation
