@@ -106,25 +106,25 @@
 
 
 
-let areaOfShapes = 'ty'
-let a = 5;
-let b = 10;
-let result
-switch (areaOfShapes) {
-    case "square":
-        result = a * a
-        console.log(result)
-        break
-    case "rectangle":
-        result = a * b
-        console.log(result)
-        break
+// let areaOfShapes = 'ty'
+// let a = 5;
+// let b = 10;
+// let result
+// switch (areaOfShapes) {
+//     case "square":
+//         result = a * a
+//         console.log(result)
+//         break
+//     case "rectangle":
+//         result = a * b
+//         console.log(result)
+//         break
 
 
-    default: result = 1
-        console.log(result)
+//     default: result = 1
+//         console.log(result)
 
-}
+// }
 
 
 
@@ -898,6 +898,11 @@ switch (areaOfShapes) {
 
 
 
+
+
+
+
+
 // function numberDifferenceTripleChecker(number) {
 
 
@@ -955,3 +960,41 @@ switch (areaOfShapes) {
 
 
 //  today no code
+
+
+
+
+// const reveNameFormate = (params) => {
+//     const newName = params.split(" ");
+
+//     let reslut = []
+//     for (let i = 0; i <= newName.length; i++) {
+//         const name = newName[i];
+//         let revred = ''
+//         for (let j = name?.length - 1; j >= 0; j--) {
+//             revred += name[j]
+//         }
+//         reslut.push(revred)
+
+//     }
+//     return reslut.join(" ")
+
+// };
+
+// console.log(
+//     reveNameFormate('emon Ahmed'))
+
+
+const reveNameFormate = (params) => {
+    const words = params.split(" "); // স্পেস দিয়ে প্রতিটি শব্দ আলাদা করল
+
+    console.log(words)
+    const reversedWords = words.map(word => {
+        const re = word.split("").reverse().join("")
+        console.log(re)
+        return  // split → reverse → join
+    });
+
+    console.log(reversedWords.join(" ")); // সব শব্দ একত্রে প্রিন্ট করল
+};
+reveNameFormate('emon ahemd')
