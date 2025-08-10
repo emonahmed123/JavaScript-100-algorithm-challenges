@@ -14,8 +14,7 @@ for (let i = 1; i <= row; i++) {
 console.log(start);
 
 
-
-
+// Hollow Rectangle Pattern
 
 const row = 5;
 const col = 5;
@@ -43,6 +42,7 @@ console.log(start);
 
 
 
+// inverted Half Pyramid
 const row = 5;
 // const col = 5;
 
