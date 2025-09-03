@@ -1,5 +1,7 @@
 
 // Full Rectangle Pattern
+/* The code you provided is creating different patterns using asterisks (*) in the console output.
+Let's break down each part: */
 const row = 5;
 const col = 5;
 let start = ""
@@ -63,4 +65,6 @@ for (let i = row; i >= 1; i--) {
 
 
 console.log(start)
+
+console.log("Inverted Half Pyramid Pattern");
 
