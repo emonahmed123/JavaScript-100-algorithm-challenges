@@ -47,3 +47,56 @@ console.log(car1);
 const audiCar = new Car("Audi", 2021)
 
 console.log(audiCar);
+
+console.log(car1 instanceof Car); // true
+
+
+
+const person = new Object();
+person.firstName = "John";
+console.log(person);
+
+
+// factory function
+
+function createUser(name, age) {
+
+    return {
+        name,
+        age,
+        greet() {
+            console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+        }
+    };
+}
+
+const user1 = createUser("Alice", 25);
+console.log(user1);
+user1.greet(); // Hello, my name is Alice and I am 25 years old.
+
+
+let profile = {
+    firstName: "Jane",
+    lastName: "Doe",
+    message: function () {
+        console.log(`${this.firstName} ${this.lastName}`);
+    },
+    address: {
+        street: "123 Main St",
+        city: "Anytown",
+        country: "USA"
+    }
+}
+
+// console.log(profile.address.city); // Anytown
+
+
+// console.log("salary" in user); // false
+
+
+
+// for in  loop
+for (let key in profile) {
+    console.log(key + ":" + profile[key]);
+
+}
