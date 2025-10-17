@@ -2,7 +2,7 @@
 
 console.log('data ');
 
-
+// object literal syntax
 let user = {
     name: 'emon',
     age: 20,
@@ -25,3 +25,25 @@ console.log(user["is Admin"]); // true
 
 const somekey = "age";
 console.log(user[somekey]); // 20
+
+let car = "BMW";
+let number = 5;
+
+let favCars = {
+    [car]: 5
+}
+console.log(favCars);
+
+
+// Constructor function
+
+function Car(name, model) {
+    this.name = name;
+    this.model = model;
+}
+
+let car1 = new Car("Toyota", 2020);
+console.log(car1);
+const audiCar = new Car("Audi", 2021)
+
+console.log(audiCar);
