@@ -104,3 +104,61 @@ for (let key in profile) {
 
 console.log(Object.keys(profile)); // [ 'firstName', 'lastName', 'message', 'address' ]
 console.log(Object.values(profile));
+
+let fruit = { name: "mango" }
+const oneMoreFruit = { name: "apple" }
+
+console.log(fruit === oneMoreFruit); // false
+
+
+
+fruit = oneMoreFruit;
+console.log(fruit === oneMoreFruit); // true
+console.log(fruit); // { name: 'apple' }
+
+
+//staick methods
+
+const target = { b: 1, a: 5 };
+const source = { a: 3, c: 3 };
+
+const returnedTarget = Object.assign(target, source);
+
+console.log(target); // { a: 1, b: 2, c: 3 }
+console.log(returnedTarget); // { a: 1, b: 2, c: 3 }
+
+const oj3 = {
+    a: 1,
+    b: { c: 2 }
+}
+
+const obj4 = Object.assign({}, oj3);
+
+obj4.b.c = 5;
+
+console.log(oj3.b.c); // 5
+
+
+// const arr = [1, 2, 3];
+// const clonedArr = Object.assign({}, arr);
+// console.log(clonedArr); 
+
+
+const obj5 = {
+    a: 1,
+    b: 2
+}
+const cloneObj5 = structuredClone(obj5);
+
+const arr = Object.entries(cloneObj5);
+; // [ [ 'a', 1 ], [ 'b', 2 ] ]
+
+
+const enties = new Map([
+    ['a', 1],
+    ['b', 2]
+])
+console.log(enties); // Map(2) { 'a' => 1, 'b' => 2 }
+
+const fromEntries = Object.fromEntries(enties);
+console.log(fromEntries); // { a: 1, b: 2 }
