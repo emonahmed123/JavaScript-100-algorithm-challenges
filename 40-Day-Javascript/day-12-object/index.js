@@ -100,3 +100,7 @@ for (let key in profile) {
     console.log(key + ":" + profile[key]);
 
 }
+
+
+console.log(Object.keys(profile)); // [ 'firstName', 'lastName', 'message', 'address' ]
+console.log(Object.values(profile));
