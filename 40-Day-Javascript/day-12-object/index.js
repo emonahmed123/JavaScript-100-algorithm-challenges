@@ -180,3 +180,7 @@ const obj7 = {
 Object.seal(obj7);
 obj7.val = 100; // works
 console.log(obj7.val); // 100
+
+console.log(Object.isSealed(obj7)); // true
+
+Object.hasOwn(obj7, 'val'); // true
