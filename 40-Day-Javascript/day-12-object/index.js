@@ -184,3 +184,19 @@ console.log(obj7.val); // 100
 console.log(Object.isSealed(obj7)); // true
 
 Object.hasOwn(obj7, 'val'); // true
+
+// Object destructuring
+const student = {
+    id: 1,
+    studentName: 'Alice',
+    grade: 'A',
+    average: 95
+    parents: {
+        father: 'Bob',
+        mother: 'Carol'
+    },
+    subjects: ['Math', 'Science', 'History']
+};
+
+const { studentName, grade } = student;
+console.log(studentName);
