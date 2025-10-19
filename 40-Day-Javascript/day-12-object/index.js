@@ -162,3 +162,21 @@ console.log(enties); // Map(2) { 'a' => 1, 'b' => 2 }
 
 const fromEntries = Object.fromEntries(enties);
 console.log(fromEntries); // { a: 1, b: 2 }
+
+
+const obj6 = {
+    sal: 1000
+}
+
+Object.freeze(obj6);
+obj6.sal = 2000; // fails silently in non-strict mode
+console.log(obj6.sal); // 1000
+
+console.log(Object.isFrozen(obj6)); // true
+
+const obj7 = {
+    val: 42
+}
+Object.seal(obj7);
+obj7.val = 100; // works
+console.log(obj7.val); // 100
