@@ -190,7 +190,7 @@ const student = {
     id: 1,
     studentName: 'Alice',
     grade: 'A',
-    average: 95
+    average: 95,
     parents: {
         father: 'Bob',
         mother: 'Carol'
