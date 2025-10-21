@@ -198,5 +198,15 @@ const student = {
     subjects: ['Math', 'Science', 'History']
 };
 
-const { studentName, grade } = student;
+const { studentName, grade, meal = "bread" } = student;
 console.log(studentName);
+
+const { subjects, numberOfSubjects = subjects.length } = student;
+
+console.log(numberOfSubjects); // 3
+
+
+const { grade: studentGrade } = student;
+
+
+const { parents: { father, mother } } = student;
