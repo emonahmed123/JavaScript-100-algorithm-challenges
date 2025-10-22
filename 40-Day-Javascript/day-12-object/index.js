@@ -210,3 +210,20 @@ const { grade: studentGrade } = student;
 
 
 const { parents: { father, mother } } = student;
+
+
+
+
+const stuents = [
+    {
+        "name": "tom"
+    },
+    {
+        "name": "sumon"
+    }
+]
+
+
+for (let { name } of stuents) {
+    console.log(name);
+}
