@@ -227,3 +227,30 @@ const stuents = [
 for (let { name } of stuents) {
     console.log(name);
 }
+const userq = { name: "Alex", age: undefined };
+console.log(userq.age ?? "Not provided");
+
+
+
+// const person = {
+//     name: "Tapas",
+//     company: {
+//         name: "tapaScript",
+//         location: {
+//             city: "Bangalore",
+//             zip: "94107"
+//         }
+//     }
+// };
+
+
+// const { company: { location: { city, zip } } } = person
+
+// console.log(city); // Bangalore
+
+
+{
+    const colors = ["red", "blue", "green"];
+    colors.fill("pink", 1, 3);
+    console.log(colors);
+}

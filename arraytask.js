@@ -16,11 +16,12 @@ Create an array of 3 empty slots.
 /*
 T-003: Create an array of 6 elements using the Array literals and access the fourth element in the array using its length property.
 */
-// const myArray = [10, 20, 30, 40, 50, 60];
+const myArray = [10, 20, 30, 40, 50, 60];
+console.log(myArray.length) // 6
 
-// const fourthElement = myArray[myArray.length - (myArray.length - 3)]
+const fourthElement = myArray[myArray.length - (myArray.length - 3)]
 
-// console.log(fourthElement)
+console.log(fourthElement) // 40
 
 
 

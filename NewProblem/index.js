@@ -1,16 +1,20 @@
 // 1- Given a string ,reverse each word in the sentence
 
 
-// const str = "hello world"
+const str = "hello world"
 
-// const Last = str.split(' ');
-// let resss = []
-// for (let i = 0; i < Last.length; i++) {
-//     const reverseW = Last[i]
-//     const bal = reverseW.split('').reverse().join('')
-//     resss.push(bal)
-// }
-// console.log(resss.join(' '))
+const Last = str.split(' ');
+console.log(Last);
+
+let resss = []
+for (let i = 0; i < Last.length; i++) {
+    const reverseW = Last[i]
+    console.log(reverseW);
+    const bal = reverseW.split('').reverse().join('')
+    // console.log(bal)
+    resss.push(bal)
+}
+console.log(resss.join(' '));
 
 // const ReversWord = (sentence) => {
 //     let worlds = sentence.split(' ')
