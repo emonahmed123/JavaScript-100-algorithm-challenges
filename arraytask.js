@@ -89,6 +89,9 @@ console.log(fourthElement) // 40
 // console.log(myArray) // [50, 20, 30, 40, 10]
 
 
+c
+
+
 /*T-011:  Empty an array using its length property*/
 
 
