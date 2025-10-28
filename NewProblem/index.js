@@ -1,20 +1,20 @@
 // 1- Given a string ,reverse each word in the sentence
 
 
-const str = "hello world"
+// const str = "hello world"
 
-const Last = str.split(' ');
-console.log(Last);
+// const Last = str.split(' ');
+// console.log(Last);
 
-let resss = []
-for (let i = 0; i < Last.length; i++) {
-    const reverseW = Last[i]
-    console.log(reverseW);
-    const bal = reverseW.split('').reverse().join('')
-    // console.log(bal)
-    resss.push(bal)
-}
-console.log(resss.join(' '));
+// let resss = []
+// for (let i = 0; i < Last.length; i++) {
+//     const reverseW = Last[i]
+//     console.log(reverseW);
+//     const bal = reverseW.split('').reverse().join('')
+//     // console.log(bal)
+//     resss.push(bal)
+// }
+// console.log(resss.join(' '));
 
 // const ReversWord = (sentence) => {
 //     let worlds = sentence.split(' ')
@@ -91,7 +91,7 @@ console.log(resss.join(' '));
 // duplicate this[1,2,3,4]//[1,2,3,1,2,3]
 
 
-let arr = [1, 2, 3, 4, 4]
+// let arr = [1, 2, 3, 4, 4]
 
 // let newArr = [...arr]
 
@@ -105,3 +105,63 @@ let arr = [1, 2, 3, 4, 4]
 
 
 // console.log(arr.concat(arr))
+
+
+const e = 'e'
+
+
+
+
+
+
+// const arr = [1, 2, 3, 4, 5, 6, 7]
+
+
+// console.log(arr)
+
+// const newArr = [...arr, 9]
+// console.log(newArr)
+
+
+// const [1, 2,...arr]= arr
+
+
+
+
+// function sum(a) {
+
+//     console.log(a)
+//     return function od(b = 1) {
+
+//         console.log(a + b)
+
+//     }
+// }
+
+
+// console.log(sum(1))
+
+
+// const result = sum(1)
+
+// console.log(result(2))
+
+
+
+
+
+// const abc = {
+//     name: "emon",
+//     age: 3,
+//     address: "Bangladesh"
+// }
+
+// let xyz = {
+//     ...abc,
+//     name: "Anikt"
+
+// }
+
+// const { name, ...pqr } = abc
+
+// console.log(pqr, xyz)
