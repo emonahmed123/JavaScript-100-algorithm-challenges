@@ -165,3 +165,12 @@ const e = 'e'
 // const { name, ...pqr } = abc
 
 // console.log(pqr, xyz)
+
+
+function check() {
+    return 100
+}
+
+let check
+
+console.log(check)
