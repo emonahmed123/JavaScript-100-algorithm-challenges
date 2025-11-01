@@ -45,6 +45,6 @@
 
 
 
-const masseage = first() && second();
+// const masseage = first() && second();
 
 console.log(masseage)
