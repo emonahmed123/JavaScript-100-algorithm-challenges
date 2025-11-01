@@ -5,7 +5,7 @@ class Person {
 
 
     }
-    eat() { //method
+    eat() { //method  for it
         console.log(`${this.name} is eating`)
     }
 
