@@ -25,7 +25,7 @@ let sakib = new Person('skib', 35)
 
 console.log(sakib.setName)
 console.log(sakib.get = "tamim")
-
+// extens person
 class Cricketet extends Person {
     constructor(name, age, country) {
         super(name, age)
