@@ -47,9 +47,6 @@ function Order(name, id) {
 
     query(`/${name}/${id}`, function (product, error) {
 
-
-
-
         console.log("Error:", error);
 
         if (!error) {
