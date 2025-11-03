@@ -24,17 +24,56 @@
 
 
 
-function greet(name, callback) {
+// function greet(name, callback) {
 
-    console.log("hello")
+//     console.log("hello")
 
 
-    setTimeout(() => { callback(); }, 2000)
-    console.log("greeted")
+//     setTimeout(() => { callback(); }, 2000)
+//     console.log("greeted")
+// }
+
+// function sayGoodbye() {
+//     console.log("Goodbye!");
+// }
+
+// greet("Alice", sayGoodbye);
+
+
+
+
+function Order(name, id) {
+
+
+    query(`/${name}/${id}`, function (product, error) {
+
+
+
+
+        console.log("Error:", error);
+
+        if (!error) {
+            let pdroduct = product;
+            console.log("Product Title:", pdroduct);
+        }
+    });
+
 }
 
-function sayGoodbye() {
-    console.log("Goodbye!");
+
+function query(endpoint, callback, options) {
+    console.log(endpoint)
+    fetch(`https://dummyjson.com${endpoint}`, options)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (json) {
+            setTimeout(() => {
+                callback(json)
+            }, 2000);
+        });
 }
 
-greet("Alice", sayGoodbye);
+
+
+Order("products", 1);
