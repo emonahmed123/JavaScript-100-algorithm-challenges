@@ -34,9 +34,44 @@ Output: 1994
 Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 */
 
-const romanToInt = (s) => {
-  let sum = 0;
+// const romanToInt = (s) => {
+//   let sum = 0;
 
+//   let roman = {
+//     I: 1,
+//     V: 5,
+//     X: 10,
+//     L: 100,
+//     C: 100,
+//     D: 500,
+//     M: 1000,
+//   };
+
+//   let strArr = s.split("");
+
+//   for (let i = 0; i < strArr.length; i++) {
+//     let currentEle = strArr[i];
+//     console.log("🚀 ~ romanToInt ~ currentEle:", currentEle);
+
+//     let currentNext = strArr[i + 1];
+//     console.log("🚀 ~ romanToInt ~ currentNext:", currentNext);
+
+//     if (roman[currentEle] < roman[currentNext]) {
+//       console.log((sum += roman[currentNext] - roman[currentEle]));
+//       // sum += roman[currentNext] - roman[currentEle];
+//       i++;
+//     } else {
+//       sum += roman[currentEle];
+//     }
+//   }
+
+//   return sum;
+// };
+
+// console.log(romanToInt("IV"));
+
+const ronmantoInt = () => {
+  let sum = 0;
   let roman = {
     I: 1,
     V: 5,
@@ -48,24 +83,15 @@ const romanToInt = (s) => {
   };
 
   let strArr = s.split("");
-
   for (let i = 0; i < strArr.length; i++) {
     let currentEle = strArr[i];
-    console.log("🚀 ~ romanToInt ~ currentEle:", currentEle);
-
     let currentNext = strArr[i + 1];
-    console.log("🚀 ~ romanToInt ~ currentNext:", currentNext);
 
-    if (roman[currentEle] < roman[currentNext]) {
-      console.log((sum += roman[currentNext] - roman[currentEle]));
-      // sum += roman[currentNext] - roman[currentEle];
-      i++;
+    if (roman[currentEle] > roman[currentNext]) {
+      sum += sum += roman[currentNext] - roman[currentEle];
     } else {
       sum += roman[currentEle];
     }
   }
-
   return sum;
 };
-
-console.log(romanToInt("IV"));
