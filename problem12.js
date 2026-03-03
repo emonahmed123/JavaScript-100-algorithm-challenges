@@ -32,3 +32,25 @@
 // n == accounts[i].length
 // 1 <= m, n <= 50
 // 1 <= accounts[i][j] <= 10
+
+const maximumWealth = (accounts) => {
+  let rich = [];
+  let banksum = 0;
+
+  for (let i = 0; i < accounts.length; i++) {
+    for (let j = 0; j < accounts[i].length; j++) {
+      banksum += accounts[i][j];
+    }
+    rich[i] = banksum;
+    banksum = 0;
+  }
+  return Math.max(...rich);
+};
+
+console.log(
+  maximumWealth([
+    [1, 2, 3],
+    [5, 2, 1],
+    [10, 2, 1],
+  ]),
+);
