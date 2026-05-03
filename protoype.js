@@ -13,7 +13,6 @@
 //     }
 // }
 
-
 // let person = {
 
 // }
@@ -27,7 +26,6 @@
 //     console.log('Sleeping')
 // }
 
-
 // const personMethods = {
 //     gender() {
 //         console.log('Male')
@@ -36,7 +34,6 @@
 //         console.log('Sleeping')
 //     }
 // }
-
 
 // function Person(name, age) {
 
@@ -51,8 +48,6 @@
 
 // }
 
-
-
 // Person.prototype = {
 //     gender() {
 //         console.log('Male')
@@ -62,12 +57,10 @@
 //     }
 // }
 
-
 // const person1 = Person('Sumit', 22);
 // person1.gender()
 // const person2 = new Person('Sumit', 22);
 // person2.gender()
-
 
 // const captain = {
 //     name: "Mashrafi",
@@ -75,19 +68,13 @@
 //     country: "Bangladesh"
 // }
 
-
 // const paylers = Object.create(captain);
-
-
 
 // function test() {
 
 // }
 
 // console.dir(test.prototype); // {}
-
-
-
 
 // class PersonC {
 
@@ -108,47 +95,39 @@
 
 // emon.gender()
 
-
 // let user = new Array()
 // user.push('Emon');
 // console.log(user);
 
-
-
 // const myArray = [10, 20, 30, 40, 50];
-
-
 
 // [myArray[1], myArray[myArray.length - 3]] = [myArray[myArray.length - 3], myArray[1]];
 
-
 // console.log(myArray)
 
+// // parent class
+// function Peroson(name, age) {
+//     this.name = name;
+//     this.age = age;
 
+//     this.eat = function () {
+//         console.log(`${this.name} is eating`)
+//     }
+// }
 
-// parent class
-function Peroson(name, age) {
-    this.name = name;
-    this.age = age;
+// // child class
+// function Cricketer(name, age, type, country) {
+//     Peroson.call(this)
+//     this.name = name;
+//     this.age = age;
+//     this.type = type;
+//     this.country = country;
+// }
+// Cricketer.prototype = Object.create(Peroson.prototype);
 
-    this.eat = function () {
-        console.log(`${this.name} is eating`)
-    }
-}
+// Cricketer.prototype.constructor = Cricketer;
 
-// child class
-function Cricketer(name, age, type, country) {
-    Peroson.call(this)
-    this.name = name;
-    this.age = age;
-    this.type = type;
-    this.country = country;
-}
-Cricketer.prototype = Object.create(Peroson.prototype);
+// const sakib = new Cricketer('All-rounder', 35, 'Bangladesh');
+// sakib.eat();
 
-Cricketer.prototype.constructor = Cricketer;
-
-const sakib = new Cricketer('All-rounder', 35, 'Bangladesh');
-sakib.eat();
-
-console.log(sakib.name)
+// console.log(sakib.name)
