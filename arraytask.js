@@ -17,14 +17,13 @@ Create an array of 3 empty slots.
 T-003: Create an array of 6 elements using the Array literals and access the fourth element in the array using its length property.
 */
 const myArray = [10, 20, 30, 40, 50, 60];
-console.log(myArray.length) // 6
+console.log(myArray.length); // 6
 
-const fourthElement = myArray[myArray.length - (myArray.length - 3)]
+const fourthElement = myArray[myArray.length - (myArray.length - 3)];
 
-console.log(fourthElement) // 40
+console.log(fourthElement); // 40
 
-
-
+//
 /*
  T-004: Use the for loop on the above array to print elements in the odd index
 */
@@ -37,7 +36,6 @@ console.log(fourthElement) // 40
 //         console.log(myArray[i])
 //     }
 // }
-
 
 /*T-005: Add one element at the front and the end of an array.*/
 //ans:005
@@ -57,7 +55,6 @@ console.log(fourthElement) // 40
 
 // console.log(myArray) // [10, 1, 20, 40, 50, 60]  // 30 removed
 
-
 /*T-007: Remove an element from the front and the end of an array.*/
 
 //ans:007
@@ -67,8 +64,6 @@ console.log(fourthElement) // 40
 // console.log(myArray) // [1, 30, 40, 50]  // 10, 60 removed
 
 /*T-008: Create an array containing the name of your favourite foods(10 foods). Destructure the 6th food element from the array using destructuring.*/
-
-
 
 // const myArray = ["rice", "fish", "meat", "vegetable", "fruits", "cake", "ice-cream", "chocolate", "biscuit", "bread"];
 
@@ -88,12 +83,9 @@ console.log(fourthElement) // 40
 // [myArray[0], myArray[myArray.length - 1]] = [myArray[myArray.length - 1], myArray[0]];
 // console.log(myArray) // [50, 20, 30, 40, 10]
 
-
-c
-
+c;
 
 /*T-011:  Empty an array using its length property*/
-
 
 // const myArray = [10, 20, 30, 40, 50];
 // myArray.length = 0;
@@ -102,7 +94,6 @@ c
 /*T-012: Create an array of 10 elements(number 1 to 10). Resize the array to length 6 once you find the number 5 in that array. Hint: Use for-loop*/
 
 // const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
 
 // for (let i = 0; i < myArray.length; i++) {
 //     if (myArray[i] == myArray[5]) {
@@ -126,12 +117,10 @@ c
 // const arr3 = arr.concat(arr2);
 // console.log(arr3) // []
 
-
 // const arr = []
 // const arr2 = []
 // const arr3 = arr + arr2
 // console.log(arr3)
-
 
 /*T-015:How can you check if a value is partially matching with any of the elements of an Array*/
 
@@ -139,17 +128,15 @@ c
 
 // const value = "choco";
 // const isMatch = myArray.some((element) => element.includes(value));
-// console.log(isMatch) // true    // chocolate is partially matching with choco   // true 
-
+// console.log(isMatch) // true    // chocolate is partially matching with choco   // true
 
 const newArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const reduArr = newArr.reduce((acc, curr) => {
+  if (newArr.length) {
+    acc.push(curr);
+  }
+  return acc;
+}, []);
 
-    if (newArr.length) {
-        acc.push(curr)
-    }
-    return acc
-}, [])
-
-console.log(reduArr) // 55
+console.log(reduArr); // 55
